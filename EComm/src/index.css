@@ -118,3 +118,17 @@ button:focus-visible {
 a{
   color:inherit;}
 
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    margin-left: 20vw;
+    margin-top: 11vh;
+    
+  }
+.productDivList {
+  
+  border: 1px solid black;
+}
+
