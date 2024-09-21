@@ -132,3 +132,9 @@ a{
   border: 1px solid black;
 }
 
+.container-product-details {
+  margin-left: 20vw;
+  margin-top: 11vh;
+  margin-bottom: 11vh;
+}
+

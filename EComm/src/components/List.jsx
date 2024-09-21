@@ -1,9 +1,10 @@
 import React from 'react'
-import productsData from "../data/products.json"
 import { useState } from 'react';
 import ListItem from './ListItem';
 
-function List() {
+
+function List(props) {
+  const {productsData} = props
 
   const [allProds, setAllProds] = useState(productsData);
  
@@ -23,17 +24,13 @@ function List() {
         allProds.map( (elem) =>  (
 
           <ListItem 
-         
+          key = {elem.id} //esto no se pasa soloo definimos la key del ListItem
           elem= {elem}
           handleDelete = {handleDelete}
           />
-       
-
-
         ))
       }
     </div>
-
   )
 }
 

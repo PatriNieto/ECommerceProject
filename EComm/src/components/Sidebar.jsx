@@ -1,14 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Sidebar() {
   return (
     <div className='sidebar'>
-      <p>
+      <Link 
+      to="/" >
       Home
-      </p>
-      <p>
-        About
-      </p>
+      </Link>
+      
+      <br/>
+
+      <Link
+      to="/about">
+      About
+      </Link>
+      
+      
       
       </div>
   )
