@@ -2,12 +2,13 @@ import React from 'react'
 import List from '../components/List'
 
 function Dashboard(props) {
-  
-  const {productsData} = props
+
+  const {allProds, handleDelete} = props
 
   return (
     <List 
-    productsData={productsData}
+    allProds={allProds}
+    handleDelete = {handleDelete}
     />
   )
 }

@@ -1,6 +1,4 @@
-
-
-
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer'
@@ -15,7 +13,15 @@ import productsData from "./data/products.json"
 
 
 function App() {
+  const [allProds, setAllProds] = useState(productsData);
 
+  const handleDelete = prodId => {
+    const filteredProds = allProds.filter( elem => {
+      return elem.id !== prodId
+    })
+    setAllProds(filteredProds)
+
+  } 
 
   return (
     <>
@@ -32,7 +38,8 @@ function App() {
   <Route 
   path="/"
   element={<Dashboard 
-    productsData={productsData}
+    allProds={allProds}
+    handleDelete = {handleDelete}
     />}
   />
 
@@ -41,7 +48,7 @@ function App() {
   element={<About />}
   />
 
-  
+
   <Route 
   path="/itemDetailsPage/:productId"
   element={< ItemDetailsPage

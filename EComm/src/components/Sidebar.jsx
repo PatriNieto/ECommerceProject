@@ -8,14 +8,16 @@ function Sidebar() {
       to="/" >
       Home
       </Link>
-      
-      <br/>
 
+      <br/>
       <Link
       to="/about">
       About
       </Link>
+
+      <br/>
       
+        Add Product
       
       
       </div>

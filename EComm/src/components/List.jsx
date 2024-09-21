@@ -1,20 +1,20 @@
 import React from 'react'
-import { useState } from 'react';
 import ListItem from './ListItem';
 
 
 function List(props) {
-  const {productsData} = props
+  const {allProds, handleDelete} = props
 
-  const [allProds, setAllProds] = useState(productsData);
+  /*lo pasamos a app
+   const [allProds, setAllProds] = useState(productsData); */
  
-   const handleDelete = prodId => {
+   /* const handleDelete = prodId => {
     const filteredProds = allProds.filter( elem => {
       return elem.id !== prodId
     })
     setAllProds(filteredProds)
 
-  } 
+  }  */
 
   return (
     <div className='list'>
