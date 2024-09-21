@@ -1,9 +1,10 @@
 import React from 'react'
 import ListItem from './ListItem';
+import AddForm from './AddForm';
 
 
 function List(props) {
-  const {allProds, handleDelete} = props
+  const {allProds, setAllProds, handleDelete} = props
 
   /*lo pasamos a app
    const [allProds, setAllProds] = useState(productsData); */
@@ -16,10 +17,18 @@ function List(props) {
 
   }  */
 
+  /* llegada de NewProducts */
+  const addNewProduct = newProduct => {
+    const updatedProducts = [...allProds, newProduct]
+    setAllProds(updatedProducts)
+  }
+
   return (
     <div className='list'>
       <h2>Students List</h2>
-
+      <AddForm 
+      addNewProduct = {addNewProduct}
+      />
       {
         allProds.map( (elem) =>  (
 

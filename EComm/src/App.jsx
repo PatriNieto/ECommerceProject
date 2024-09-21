@@ -40,6 +40,7 @@ function App() {
   element={<Dashboard 
     allProds={allProds}
     handleDelete = {handleDelete}
+    setAllProds = {setAllProds}
     />}
   />
 

@@ -125,16 +125,17 @@ a{
     margin: 0;
     margin-left: 20vw;
     margin-top: 11vh;
-    
+    margin-bottom: 21vh;
   }
 .productDivList {
   
   border: 1px solid black;
+  
 }
 
 .container-product-details {
   margin-left: 20vw;
   margin-top: 11vh;
-  margin-bottom: 11vh;
+  margin-bottom: 21vh;
 }
 

@@ -3,12 +3,13 @@ import List from '../components/List'
 
 function Dashboard(props) {
 
-  const {allProds, handleDelete} = props
+  const {allProds,setAllProds, handleDelete} = props
 
   return (
     <List 
     allProds={allProds}
     handleDelete = {handleDelete}
+    setAllProds = {setAllProds}
     />
   )
 }
